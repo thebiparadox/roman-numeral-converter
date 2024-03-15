@@ -1,2 +1,1 @@
-# roman-numeral-converter
-This is my Roman numeral converter project for freeCodeCamp's JavaScript and Data Structures certification.
+This is my Roman numeral converter project for [freeCodeCamp's JavaScript and Data Structures certification.](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-roman-numeral-converter-project/build-a-roman-numeral-converter)

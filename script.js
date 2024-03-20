@@ -1,8 +1,10 @@
+// Get objects from DOM
 const userInput = document.getElementById("number");
 const button = document.getElementById("convert-btn");
 const output = document.getElementById("result");
 
-function validCheck(str) {
+// Check if input is valid
+function validCheck() {
   // if input is blank, alert user
   if (userInput.value === "") {
     alert("Please enter a valid number");
@@ -27,6 +29,7 @@ function validCheck(str) {
   }
 }
 
+// process result
 function processNumeral(result, symbol, symbolValue) {
   while (result.value >= symbolValue) {
     result.numeral += symbol;
@@ -34,6 +37,7 @@ function processNumeral(result, symbol, symbolValue) {
   }
 }
 
+// convert to numeral
 function convertToRoman(number) {
   let result = {
     value: number,
@@ -54,9 +58,10 @@ function convertToRoman(number) {
   processNumeral(result, "IV", 4);
   processNumeral(result, "I", 1);
 
-  return result;
+  return result.numeral;
 }
 
+// update display
 function updateResultMsg() {
   const numStr = userInput.value;
   const int = parseInt(numStr, 10);
